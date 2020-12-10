@@ -16,6 +16,7 @@ var argButtonName, button_paper, button_Rock, button_scissors, buttonRock, butto
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
+	
 	var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 	/**
@@ -53,7 +54,7 @@ function buttonClicked(argButtonName) {
 	  }
 	  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 	}
-	
+
 	playerMove = argButtonName;
 	randomNumber = Math.floor(Math.random() * 3 + 1);
 	console.log('wylosowana liczba to: ' + randomNumber);
